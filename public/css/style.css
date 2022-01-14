@@ -1,0 +1,13 @@
+html,body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+  }
+  .dragable{
+    position: absolute;
+    background-size:cover;
+  }
+  .meeple{
+    height:100px;
+    width:100px;
+  }
