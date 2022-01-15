@@ -1,6 +1,7 @@
 module.exports.Draggable = class Draggable{
     constructor(id,x,y,image){
         this.id=id;
+        this.eleID="draggable"+id;
         this.x=x;
         this.y=y;
         this.image=image;

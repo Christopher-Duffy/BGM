@@ -7,8 +7,11 @@ function addSocketEvents(socket){
   //   showHighScores(data);
   // });
   socket.on('draggables',function(data){
-    console.log(data);
+    draggables=data;
   });
 }
+
+var draggables = [];
+
 //add the event handlers to the client socket
 addSocketEvents(socket);

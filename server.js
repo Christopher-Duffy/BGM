@@ -28,8 +28,21 @@ io.on('connection', function(socket){
     draggables.push(draggable);
     broadcast();
   });
-
+  
+  socket.on('moveDraggable', function(data){
+    console.log(data);
+    for(var i=0;i<draggables.length;i++){
+      if(draggables[i].eleID==data.eleID){
+        console.log('element id found');
+        draggables[i].x=data.x;
+        draggables[i].y=data.y;
+      }
+    }
+    broadcast();
+  });
 });
+
+
 
 function broadcast(){
   io.emit("draggables",draggables);

@@ -3,11 +3,26 @@ html,body{
     padding:0;
     overflow: hidden;
   }
-  .dragable{
+  .draggable{
     position: absolute;
     background-size:cover;
   }
   .meeple{
     height:100px;
     width:100px;
+  }
+  .board{
+    position: absolute;
+    height:100vh;
+  }
+  #controlPanel{
+  position: absolute;
+  width:20%;
+  background-color: aquamarine;
+  right:0;
+  top:0;
+  height:100vh;
+  }
+  button{
+    border-radius: 25%;
   }
